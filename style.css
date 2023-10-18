@@ -1,0 +1,55 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.jumbotron {
+  padding-top: 6rem;
+  background-color: #f1efef;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+footer {
+  flex: 0 0 auto;
+}
+
+.card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer; /* Add this line to change cursor to pointer */
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.description {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .footer-text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-text {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  .footer-text {
+    font-size: 10px;
+  }
+}
