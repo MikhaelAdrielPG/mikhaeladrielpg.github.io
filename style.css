@@ -3,6 +3,10 @@ body {
   flex-direction: column;
 }
 
+.hide {
+  display: none;
+}
+
 .jumbotron {
   padding-top: 6rem;
   background-color: #f1efef;
@@ -19,11 +23,30 @@ footer {
 .card {
   transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer; /* Add this line to change cursor to pointer */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .card:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-text {
+  flex-grow: 1;
 }
 
 .description {
