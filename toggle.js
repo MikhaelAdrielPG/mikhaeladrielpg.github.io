@@ -1,21 +1,18 @@
-function toggleShow(id, button) {
+function toggleShow(
+  id,
+  button,
+  showText = "Show More",
+  hideText = "Show Less"
+) {
   const container = document.getElementById(id);
+  if (!container) return;
+
   const items = container.querySelectorAll(".toggle-item");
-  let allVisible = true;
+  const allVisible = [...items].every(
+    (item) => !item.classList.contains("d-none")
+  );
 
-  items.forEach((item) => {
-    if (item.classList.contains("d-none")) {
-      allVisible = false;
-    }
-  });
-
-  items.forEach((item) => {
-    if (allVisible) {
-      item.classList.add("d-none");
-    } else {
-      item.classList.remove("d-none");
-    }
-  });
-
-  button.textContent = allVisible ? "Show More" : "Show Less";
+  items.forEach((item) => item.classList.toggle("d-none", allVisible));
+  button.textContent = allVisible ? showText : hideText;
+  button.setAttribute("aria-expanded", !allVisible);
 }

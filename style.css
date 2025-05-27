@@ -1,6 +1,11 @@
 body {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
 }
 
 .hide {
@@ -9,7 +14,7 @@ body {
 
 .jumbotron {
   padding-top: 6rem;
-  background-color: #f1efef;
+  background-color: var(--primary-bg);
 }
 
 section {
@@ -22,7 +27,7 @@ footer {
 
 .card {
   transition: transform 0.3s, box-shadow 0.3s;
-  cursor: pointer; /* Add this line to change cursor to pointer */
+  cursor: pointer;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -30,13 +35,12 @@ footer {
 
 .card:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px var(--hover-shadow);
 }
 
 .card-img-top {
-  height: 200px;
+  aspect-ratio: 16/9;
   object-fit: cover;
-  width: 100%;
 }
 
 .card-body {
@@ -59,9 +63,22 @@ footer {
   height: auto;
 }
 
+.toggle-item {
+  transition: opacity 0.3s ease-in-out;
+}
+
+:root {
+  --primary-bg: #f1efef;
+  --hover-shadow: rgba(0, 0, 0, 0.1);
+}
+
+.jumbotron {
+  background-color: var(--primary-bg);
+}
+
 @media (max-width: 768px) {
   .footer-text {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 }
 
