@@ -1,7 +1,31 @@
+:root {
+  --primary-bg: #f1efef;
+  --hover-shadow: rgba(0, 0, 0, 0.1);
+  --text-color: #000;
+  --bg-color: #fff;
+  --card-bg: #fff;
+  --footer-bg: #212529;
+  --navbar-bg: #343a40;
+}
+
+:root.dark-mode {
+  --primary-bg: #1a1a1a;
+  --hover-shadow: rgba(255, 255, 255, 0.1);
+  --text-color: #f8f9fa;
+  --bg-color: #121212;
+  --card-bg: #212121;
+  --footer-bg: #1a1a1a;
+  --navbar-bg: #212121;
+}
+
+/* Global Body */
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
 }
 
 main {
@@ -12,25 +36,64 @@ main {
   display: none;
 }
 
+/* Navbar */
+.navbar-dark.custom-navbar {
+  background-color: var(--navbar-bg);
+}
+
+.dark-mode .navbar-dark.custom-navbar {
+  background-color: var(--navbar-bg);
+}
+
+/* Tombol Dark Mode */
+#darkModeToggle {
+  margin-left: 1rem;
+  transition: all 0.3s ease;
+}
+
+.dark-mode #darkModeToggle {
+  color: var(--text-color);
+}
+
+/* Jumbotron */
 .jumbotron {
   padding-top: 6rem;
   background-color: var(--primary-bg);
+  transition: background-color 0.3s;
 }
 
+.jumbotron img {
+  filter: brightness(0.8);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.dark-mode .jumbotron img {
+  filter: brightness(1);
+}
+
+/* Section */
 section {
   padding-top: 5rem;
 }
 
+/* Footer */
 footer {
   flex: 0 0 auto;
+  background-color: var(--footer-bg);
+  color: var(--text-color);
+  transition: background-color 0.3s;
 }
 
+/* Card */
 .card {
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
   cursor: pointer;
   height: 100%;
   display: flex;
   flex-direction: column;
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border: none;
 }
 
 .card:hover {
@@ -64,18 +127,15 @@ footer {
 }
 
 .toggle-item {
+  opacity: 1;
   transition: opacity 0.3s ease-in-out;
 }
 
-:root {
-  --primary-bg: #f1efef;
-  --hover-shadow: rgba(0, 0, 0, 0.1);
+.toggle-item.d-none {
+  display: none !important;
 }
 
-.jumbotron {
-  background-color: var(--primary-bg);
-}
-
+/* Responsive Typography for Footer */
 @media (max-width: 768px) {
   .footer-text {
     font-size: 0.875rem;
