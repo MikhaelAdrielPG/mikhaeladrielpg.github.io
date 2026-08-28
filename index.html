@@ -1,44 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mikhael Adriel Pratama Gana - QA Automation Engineer Portfolio. Showcasing experience in Java, Katalon Studio, Selenium, and full-stack web development.">
-    <meta name="keywords" content="QA Automation Engineer, Mikhael Adriel, Java Developer, Portfolio, Selenium, Katalon, Web Developer, Backend Developer, Appium, Postman, Jenkins">
-    <meta name="author" content="Mikhael Adriel Pratama Gana">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Mikhael Adriel Pratama Gana - QA Automation Engineer Portfolio. Showcasing experience in Java, Katalon Studio, Selenium, and full-stack web development.">
+  <meta name="keywords"
+    content="QA Automation Engineer, Mikhael Adriel, Java Developer, Portfolio, Selenium, Katalon, Web Developer, Backend Developer, Appium, Postman, Jenkins">
+  <meta name="author" content="Mikhael Adriel Pratama Gana">
 
-    <title>My Portfolio | Mikhael Adriel Pratama Gana</title>
+  <title>Mikhael Adriel Pratama Gana | Portfolio</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/> 
-    <link href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body id="home">
-   <nav class="navbar navbar-expand-lg navbar-dark custom-navbar shadow-sm fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#home"><img src="img/M.png" alt="Mikhael" width="36" height="36" class="img-fluid" loading="lazy"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+    <div class="container">
+      <a class="navbar-brand brand-logo" href="#home">MA.</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
+        <ul class="navbar-nav mx-auto">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">Experience</a>
+            <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#projects">Project & Certification</a>
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#resume">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
         <!-- Dark Mode Toggle -->
-        <ul class="navbar-nav ms-3 d-none d-md-inline-block">
-          <li class="nav-item">
-            <button id="darkModeToggle" class="btn btn-outline-light btn-sm" title="Toggle dark mode">
-              <i class="bi bi-moon"></i>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item d-flex align-items-center">
+            <button id="darkModeToggle" class="btn dark-toggle-btn" title="Toggle dark mode"
+              aria-label="Toggle dark mode">
+              <i class="bi bi-moon-fill"></i>
             </button>
           </li>
         </ul>
@@ -46,238 +65,336 @@
     </div>
   </nav>
 
-    <main>
-      <div class="jumbotron text-center pb-3">
-        <img src="img/GBR-removebg-preview.png" alt="gbr" width="200" class="rounded-circle img-thumbnail img-fluid" loading="lazy">
-        <h1 class="display-5">Mikhael Adriel Pratama Gana</h1>
-        <p class="lead">QA Automation Engineer | Software Engineer</p>
-      </div>
+  <main>
 
-      <section id="about" aria-labelledby="about-heading">
-        <div class="container-fluid">
-          <div class="row mb-3">
-            <div class="col">
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="row align-items-center min-vh-100">
+
+          <!-- Left: Text -->
+          <div class="col-lg-6 col-md-7 hero-text-col">
+            <p class="hero-tags">QA AUTOMATION <span class="hero-tag-sep">|</span> BACKEND <span
+                class="hero-tag-sep">|</span> FULLSTACK</p>
+            <h1 class="hero-heading">Hi, I'm Mikhael<br>Adriel.</h1>
+            <p class="hero-desc">A QA Automation and Software Engineer passionate about building reliable, scalable, and
+              high-quality digital products. Welcome to my portfolio.</p>
+            <div class="hero-cta d-flex align-items-center gap-4 flex-wrap">
+              <a href="#resume" class="btn btn-hero-primary" id="btn-view-resume">
+                View Resume <i class="bi bi-arrow-right"></i>
+              </a>
+              <a href="https://www.instagram.com/mikhaelapg" class="btn-hero-ghost" id="btn-lets-talk" target="_blank"
+                rel="noopener noreferrer">Let's Talk</a>
+            </div>
+          </div>
+
+          <!-- Right: Photo -->
+          <div class="col-lg-6 col-md-5 hero-photo-col d-flex justify-content-center justify-content-md-end">
+            <div class="hero-photo-wrapper">
+              <img src="img/GBR-removebg-preview.png" alt="Mikhael Adriel Pratama Gana" class="hero-photo"
+                loading="eager">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT / EXPERIENCE SECTION -->
+    <section id="about" aria-labelledby="about-heading" class="content-section">
+      <div class="container-fluid">
+        <div class="row mb-3">
+          <div class="col">
             <h2 id="education-heading" class="mb-3">Education</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md">
-              <ul>
-                <li>Computer Science (Bachelor Degree - 2023)</li>
-                <li>Natural Science Major (Senior High School - 2018)</li>
-              </ul>
-            </div>
-          </div>
-          <div class="row mb-3 mt-5">
-            <div class="col">
-              <h2 id="experience-heading" class="mb-3">Experiences</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md">
-              <h6>PT. Bank Mandiri (Persero) Tbk., Jakarta (2024)</h6>
-              <i>Full-time, QA Automation Engineer</i>
-              <p>As a QA Automation Engineer, I specialize in functional test automation to ensure application integrity, performance, and reliability. I have hands-on experience with tools such as Katalon Studio, Java, Node.js, Selenium, Appium, Postman, Jenkins, and Git, which I use to automate testing for both web and Android applications. Key Achievements:</p>
-              <ul>
-                <li>Developed and maintained comprehensive automated test scripts using Katalon Studio for web and mobile platforms.</li>
-                <li>Enhanced regression and integration test suites, significantly increasing test coverage and reducing manual testing efforts.</li>
-                <li>Collaborated with cross-functional teams to identify and resolve defects, improving system stability and accelerating release cycles.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="row mt-3">
-            <div class="col-md">
-              <h6>PT. Supernova Palapa Nusantara, Bandung (2024)</h6>
-              <i>Freelance, Backend Developer</i>
-              <p>As a Backend Engineer, I led the development of backend services for a custom Point-of-Sale (POS) system integrated into an ERP platform. I focused on building scalable APIs and ensuring seamless interaction with frontend components for real-time data handling. Key Achievements:</p>
-              <ul>
-                <li>Built a backend system for a custom Point-of-Sale (POS) application using NestJS, Prisma, and PostgreSQL.</li>
-                <li>Integrated backend APIs with frontend services built in Nuxt and styled using Tailwind CSS.</li>
-                <li>Ensured responsive data operations and consistent data flow across the system.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="row mt-3">
-            <div class="col-md">
-              <h6>J4U Ministry, Bandung (2023)</h6>
-              <i>Freelance, Web Developer</i>
-              <p>Maintained and enhanced an internal application for J4U Ministry, focusing on streamlining administrative workflows and improving operational efficiency. Contributed to both frontend and backend development to optimize performance and user experience. Key Achievements:</p>
-              <ul>
-                <li>Refactored and improved admin panel interfaces and backend workflows using Laravel, Vue.js, and PostgreSQL.</li>
-                <li>Identified and resolved data flow bottlenecks; optimized CRUD operations to enhance application performance and usability.</li>
-                <li>Provided ongoing support and maintenance, addressing bugs and implementing new features in close collaboration with internal stakeholders.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="row mt-3">
-            <div class="col-md">
-              <h6>PT. Walden Global Service, Bandung (2023)</h6>
-              <i>Internship, Java Developer</i>
-              <p>Participated in a backend development bootcamp focused on enterprise-level solutions, emphasizing modern backend development practices. Contributed to building robust REST APIs and integrating data services for scalable applications. Key Achievements:</p>
-              <ul>
-                <li>Developed RESTful APIs using Java Spring Boot, adhering to clean architecture and REST principles.</li>
-                <li>Designed and implemented efficient PostgreSQL database operations to support core application features.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="row mt-3">
-            <div class="col-md">
-              <h6>PT. Visi Teguh Kreatif, Bandung (2023)</h6>
-              <i>Internship, Web Programmer</i>
-              <p>Implemented foundational modules for internal tools aimed at idea generation, productivity enhancement, and administrative improvements. Focused on translating user requirements into fully functional web applications. Key Achievements:</p>
-              <ul>
-                <li>Developed web applications using Laravel, HTML, CSS, JavaScript, AJAX, Bootstrap, and MySQL, aligned with user requirements and business goals.</li>
-                <li>Designed and structured relational databases based on functional and user specifications to ensure data consistency and performance.</li>
-                <li>Conducted testing and implemented features to validate compliance with system requirements and improve reliability.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="row mt-3">
-            <div class="col-md">
-              <h6>I2C Studio, Bandung (2021)</h6>
-              <i>Part-time, Junior Web Developer</i>
-              <p>Implemented ISO assessment instrument modules for internal use to enhance productivity, streamline administrative processes, and reinforce quality assurance practices. Focused on developing scalable web features and ensuring data integrity aligned with organizational goals. Key Achievements:</p>
-              <ul>
-                <li>Developed application features and designed relational databases using Laravel, HTML, CSS, JavaScript, jQuery, Bootstrap, and PostgreSQL.</li>
-                <li>Translated user requirements into functional modules that supported ISO assessment workflows and reporting capabilities.</li>
-                <li>Conducted thorough testing and successfully deployed the application to ensure compliance with performance, functionality, and quality standards.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="row mt-3">
-            <div class="col-md">
-              <h6>PT. Rumah Belajar Indonesia, Bandung (2021)</h6>
-              <i>Summer Intern, Junior Web Developer</i>
-              <p>Implemented foundational modules for a Learning Management System (LMS) and learning package management tools to improve productivity and streamline administrative processes for internal use. Emphasized aligning development with user requirements and enhancing usability. Key Achievements:</p>
-              <ul>
-                <li>Designed and evaluated UML diagrams based on user requirements to ensure the final product met functional expectations.</li>
-                <li>Developed a web-based application using PHP with the Laravel framework, Livewire, HTML, CSS, JavaScript, AJAX, Bootstrap, CoreUI, and various plugins/libraries, backed by PostgreSQL.</li>
-                <li>Conducted comprehensive testing and deployed the application to verify alignment with technical specifications and user expectations.</li>
-              </ul>
-            </div>
           </div>
         </div>
-      </section>
+        <div class="row">
+          <div class="col-md">
+            <ul>
+              <li>Computer Science (Bachelor Degree - 2023)</li>
+              <li>Natural Science Major (Senior High School - 2018)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mb-3 mt-5">
+          <div class="col">
+            <h2 id="experience-heading" class="mb-3">Experiences</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md">
+            <h6>PT. Bank Mandiri (Persero) Tbk., Jakarta (2024)</h6>
+            <i>Full-time, QA Automation Engineer</i>
+            <p>As a QA Automation Engineer, I specialize in functional test automation to ensure application integrity,
+              performance, and reliability. I have hands-on experience with tools such as Katalon Studio, Java, Node.js,
+              Selenium, Appium, Postman, Jenkins, and Git, which I use to automate testing for both web and Android
+              applications. Key Achievements:</p>
+            <ul>
+              <li>Developed and maintained comprehensive automated test scripts using Katalon Studio for web and mobile
+                platforms.</li>
+              <li>Enhanced regression and integration test suites, significantly increasing test coverage and reducing
+                manual testing efforts.</li>
+              <li>Collaborated with cross-functional teams to identify and resolve defects, improving system stability
+                and accelerating release cycles.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md">
+            <h6>PT. Supernova Palapa Nusantara, Bandung (2024)</h6>
+            <i>Freelance, Backend Developer</i>
+            <p>As a Backend Engineer, I led the development of backend services for a custom Point-of-Sale (POS) system
+              integrated into an ERP platform. I focused on building scalable APIs and ensuring seamless interaction
+              with frontend components for real-time data handling. Key Achievements:</p>
+            <ul>
+              <li>Built a backend system for a custom Point-of-Sale (POS) application using NestJS, Prisma, and
+                PostgreSQL.</li>
+              <li>Integrated backend APIs with frontend services built in Nuxt and styled using Tailwind CSS.</li>
+              <li>Ensured responsive data operations and consistent data flow across the system.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md">
+            <h6>J4U Ministry, Bandung (2023)</h6>
+            <i>Freelance, Web Developer</i>
+            <p>Maintained and enhanced an internal application for J4U Ministry, focusing on streamlining administrative
+              workflows and improving operational efficiency. Contributed to both frontend and backend development to
+              optimize performance and user experience. Key Achievements:</p>
+            <ul>
+              <li>Refactored and improved admin panel interfaces and backend workflows using Laravel, Vue.js, and
+                PostgreSQL.</li>
+              <li>Identified and resolved data flow bottlenecks; optimized CRUD operations to enhance application
+                performance and usability.</li>
+              <li>Provided ongoing support and maintenance, addressing bugs and implementing new features in close
+                collaboration with internal stakeholders.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md">
+            <h6>PT. Walden Global Service, Bandung (2023)</h6>
+            <i>Internship, Java Developer</i>
+            <p>Participated in a backend development bootcamp focused on enterprise-level solutions, emphasizing modern
+              backend development practices. Contributed to building robust REST APIs and integrating data services for
+              scalable applications. Key Achievements:</p>
+            <ul>
+              <li>Developed RESTful APIs using Java Spring Boot, adhering to clean architecture and REST principles.
+              </li>
+              <li>Designed and implemented efficient PostgreSQL database operations to support core application
+                features.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md">
+            <h6>PT. Visi Teguh Kreatif, Bandung (2023)</h6>
+            <i>Internship, Web Programmer</i>
+            <p>Implemented foundational modules for internal tools aimed at idea generation, productivity enhancement,
+              and administrative improvements. Focused on translating user requirements into fully functional web
+              applications. Key Achievements:</p>
+            <ul>
+              <li>Developed web applications using Laravel, HTML, CSS, JavaScript, AJAX, Bootstrap, and MySQL, aligned
+                with user requirements and business goals.</li>
+              <li>Designed and structured relational databases based on functional and user specifications to ensure
+                data consistency and performance.</li>
+              <li>Conducted testing and implemented features to validate compliance with system requirements and improve
+                reliability.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md">
+            <h6>I2C Studio, Bandung (2021)</h6>
+            <i>Part-time, Junior Web Developer</i>
+            <p>Implemented ISO assessment instrument modules for internal use to enhance productivity, streamline
+              administrative processes, and reinforce quality assurance practices. Focused on developing scalable web
+              features and ensuring data integrity aligned with organizational goals. Key Achievements:</p>
+            <ul>
+              <li>Developed application features and designed relational databases using Laravel, HTML, CSS, JavaScript,
+                jQuery, Bootstrap, and PostgreSQL.</li>
+              <li>Translated user requirements into functional modules that supported ISO assessment workflows and
+                reporting capabilities.</li>
+              <li>Conducted thorough testing and successfully deployed the application to ensure compliance with
+                performance, functionality, and quality standards.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md">
+            <h6>PT. Rumah Belajar Indonesia, Bandung (2021)</h6>
+            <i>Summer Intern, Junior Web Developer</i>
+            <p>Implemented foundational modules for a Learning Management System (LMS) and learning package management
+              tools to improve productivity and streamline administrative processes for internal use. Emphasized
+              aligning development with user requirements and enhancing usability. Key Achievements:</p>
+            <ul>
+              <li>Designed and evaluated UML diagrams based on user requirements to ensure the final product met
+                functional expectations.</li>
+              <li>Developed a web-based application using PHP with the Laravel framework, Livewire, HTML, CSS,
+                JavaScript, AJAX, Bootstrap, CoreUI, and various plugins/libraries, backed by PostgreSQL.</li>
+              <li>Conducted comprehensive testing and deployed the application to verify alignment with technical
+                specifications and user expectations.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <section id="projects" aria-labelledby="project-heading">
-          <div class="projects-container">
-          <div class="container-fluid">
-            <!-- Certification -->
-            <div class="row mb-3 mt-5">
-              <div class="col">
-                <h2 id="certification-heading" class="mb-3">Certifications</h2>
-              </div>
-            </div>
-            <div class="row" id="certification-list">
-              <!-- Visible by default -->
-              <div class="col-md-4 mb-3">
-                <a href="https://www.credly.com/badges/ddfb652d-89ac-471c-9423-ec2a477bdef4?source=linked_in_profile" class="description">
-                  <div class="card shadow-sm h-100">
-                    <img src="img/projects/aws.png" class="card-img-top img-fluid" alt="aws" loading="lazy">
-                    <div class="card-body">
-                      <p class="card-text">Completed the AWS Academy Cloud Foundations (ACF).</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-4 mb-3">
-                <a href="#certification" class="description">
-                  <div class="card shadow-sm h-100">
-                    <img src="img/projects/toefl.png" class="card-img-top img-fluid" alt="toefl" loading="lazy">
-                    <div class="card-body">
-                      <p class="card-text">Completed a TOEFL ITP Test.</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-4 mb-3">
-                <a href="https://www.efset.org/cert/fX8jtU" class="description">
-                  <div class="card shadow-sm h-100">
-                    <img src="img/projects/efset.png" class="card-img-top img-fluid" alt="efset" loading="lazy">
-                    <div class="card-body">
-                      <p class="card-text">Completed an EFSET English Test.</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <!-- Hidden certifications -->
-              <div class="col-md-4 mb-3 toggle-item d-none">
-                <a href="https://learn.nvidia.com/certificates?id" class="description">
-                  <div class="card shadow-sm h-100">
-                    <img src="img/projects/nvidia1.png" class="card-img-top img-fluid" alt="cert4" >
-                    <div class="card-body">
-                      <p class="card-text">Introduction to Transformer-Based Natural Language Processing</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <!-- Toggle Button -->
-            <div class="text-center mb-4">
-              <button class="btn btn-outline-primary" onclick="toggleShow('certification-list', this)"  aria-expanded="false" aria-controls="certification-list">Show More</button>
-            </div>
-
-            <!-- Projects -->
-            <div class="row mb-3 mt-5">
-              <div class="col">
-                <h2 id="project-heading" class="mb-3">Projects</h2>
-              </div>
-            </div>
-            <div class="row" id="project-list">
-              <div class="col-md-4 mb-3">
-                <div class="card shadow-sm h-100">
-                  <img src="img/projects/j4u.png" class="card-img-top img-fluid" alt="j4u" loading="lazy">
-                  <div class="card-body">
-                    <h5>J4U WebApp</h5>
-                    <p class="card-text">The main purpose of this website is to provide information activities held by J4U Ministry. To satisfy the user experience. Using Laravel and Vue.js.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 mb-3">
-                <div class="card shadow-sm h-100">
-                  <img src="img/projects/theatrum.png" class="card-img-top img-fluid" alt="theatrum" loading="lazy">
-                  <div class="card-body">
-                    <h5>Theatrum</h5>
-                    <p class="card-text">The main purpose of this mobile application is to provide information related to films.  This is final project of mobile development major. Using Kotlin.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 mb-3">
-                <div class="card shadow-sm h-100">
-                  <img src="img/projects/RBI.png" class="card-img-top img-fluid" alt="rbi" loading="lazy">
-                  <div class="card-body">
-                    <h5>PT Rumah Belajar Indonesia WebApp</h5>
-                    <p class="card-text">Implemented the foundation modules for learning feature and for internal use to increase productivity and administration improvement.</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Disembunyikan dengan toggle-item -->
-              <div class="col-md-4 mb-3 toggle-item d-none">
-                <div class="card shadow-sm h-100">
-                  <img src="img/projects/default.png" class="card-img-top img-fluid" alt="Visi Teguh Kreatif project thumbnail" loading="lazy">
-                  <div class="card-body">
-                    <h5>PT. Visi Teguh Kreatif Telkom Leapup WebApp</h5>
-                    <p class="card-text">Implemented the foundation modules for generate idea and for internal use to increase productivity and administration improvement.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="text-center mb-4">
-              <button class="btn btn-outline-primary" onclick="toggleShow('project-list', this)"  aria-expanded="false" aria-controls="project-list">Show More</button>
+    <!-- PROJECTS & CERTIFICATIONS SECTION -->
+    <section id="projects" aria-labelledby="project-heading" class="content-section">
+      <div class="projects-container">
+        <div class="container-fluid">
+          <!-- Certification -->
+          <div class="row mb-3 mt-5">
+            <div class="col">
+              <h2 id="certification-heading" class="mb-3">Certifications</h2>
             </div>
           </div>
+          <div class="row" id="certification-list">
+            <!-- Visible by default -->
+            <div class="col-md-4 mb-3">
+              <a href="https://www.credly.com/badges/ddfb652d-89ac-471c-9423-ec2a477bdef4?source=linked_in_profile"
+                class="description">
+                <div class="card shadow-sm h-100">
+                  <img src="img/projects/aws.png" class="card-img-top img-fluid" alt="aws" loading="lazy">
+                  <div class="card-body">
+                    <p class="card-text">Completed the AWS Academy Cloud Foundations (ACF).</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4 mb-3">
+              <a href="#certification" class="description">
+                <div class="card shadow-sm h-100">
+                  <img src="img/projects/toefl.png" class="card-img-top img-fluid" alt="toefl" loading="lazy">
+                  <div class="card-body">
+                    <p class="card-text">Completed a TOEFL ITP Test.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4 mb-3">
+              <a href="https://www.efset.org/cert/fX8jtU" class="description">
+                <div class="card shadow-sm h-100">
+                  <img src="img/projects/efset.png" class="card-img-top img-fluid" alt="efset" loading="lazy">
+                  <div class="card-body">
+                    <p class="card-text">Completed an EFSET English Test.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Hidden certifications -->
+            <div class="col-md-4 mb-3 toggle-item d-none">
+              <a href="https://learn.nvidia.com/certificates?id" class="description">
+                <div class="card shadow-sm h-100">
+                  <img src="img/projects/nvidia1.png" class="card-img-top img-fluid" alt="cert4">
+                  <div class="card-body">
+                    <p class="card-text">Introduction to Transformer-Based Natural Language Processing</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Toggle Button -->
+          <div class="text-center mb-4">
+            <button class="btn btn-outline-primary" onclick="toggleShow('certification-list', this)"
+              aria-expanded="false" aria-controls="certification-list">Show More</button>
+          </div>
+
+          <!-- Projects -->
+          <div class="row mb-3 mt-5">
+            <div class="col">
+              <h2 id="project-heading" class="mb-3">Projects</h2>
+            </div>
+          </div>
+          <div class="row" id="project-list">
+            <div class="col-md-4 mb-3">
+              <div class="card shadow-sm h-100">
+                <img src="img/projects/j4u.png" class="card-img-top img-fluid" alt="j4u" loading="lazy">
+                <div class="card-body">
+                  <h5>J4U WebApp</h5>
+                  <p class="card-text">The main purpose of this website is to provide information activities held by J4U
+                    Ministry. To satisfy the user experience. Using Laravel and Vue.js.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="card shadow-sm h-100">
+                <img src="img/projects/theatrum.png" class="card-img-top img-fluid" alt="theatrum" loading="lazy">
+                <div class="card-body">
+                  <h5>Theatrum</h5>
+                  <p class="card-text">The main purpose of this mobile application is to provide information related to
+                    films. This is final project of mobile development major. Using Kotlin.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="card shadow-sm h-100">
+                <img src="img/projects/RBI.png" class="card-img-top img-fluid" alt="rbi" loading="lazy">
+                <div class="card-body">
+                  <h5>PT Rumah Belajar Indonesia WebApp</h5>
+                  <p class="card-text">Implemented the foundation modules for learning feature and for internal use to
+                    increase productivity and administration improvement.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hidden with toggle-item -->
+            <div class="col-md-4 mb-3 toggle-item d-none">
+              <div class="card shadow-sm h-100">
+                <img src="img/projects/default.png" class="card-img-top img-fluid"
+                  alt="Visi Teguh Kreatif project thumbnail" loading="lazy">
+                <div class="card-body">
+                  <h5>PT. Visi Teguh Kreatif Telkom Leapup WebApp</h5>
+                  <p class="card-text">Implemented the foundation modules for generate idea and for internal use to
+                    increase productivity and administration improvement.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center mb-4">
+            <button class="btn btn-outline-primary" onclick="toggleShow('project-list', this)" aria-expanded="false"
+              aria-controls="project-list">Show More</button>
+          </div>
+        </div>
       </div>
-      </section>
-    </main>
+    </section>
 
-    <footer class="bg-dark text-white text-center pt-3">
-      <p class="footer-text">Contact <a href="https://www.instagram.com/mikhaelapg" class="text-white fw-bold">Mikhael Adriel Pratama Gana</a> to get more information on the project</p>
-    </footer>
+  </main>
 
-    <script src="toggle.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <!-- FOOTER -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-inner d-flex justify-content-between align-items-center flex-wrap gap-3">
+        <p class="footer-copy mb-0">© 2026 Mikhael Adriel. All rights reserved.</p>
+        <div class="footer-socials d-flex align-items-center gap-3">
+          <a href="https://github.com/mikhaeladrielpg" class="footer-social-link" target="_blank"
+            rel="noopener noreferrer" aria-label="GitHub">
+            <i class="bi bi-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/mikhaeladriel" class="footer-social-link" target="_blank"
+            rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="https://x.com/mikhaelapg" class="footer-social-link" target="_blank" rel="noopener noreferrer"
+            aria-label="X (Twitter)">
+            <i class="bi bi-twitter-x"></i>
+          </a>
+          <a href="https://www.instagram.com/mikhaelapg" class="footer-social-link" target="_blank"
+            rel="noopener noreferrer" aria-label="Instagram">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="toggle.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
 </html>
