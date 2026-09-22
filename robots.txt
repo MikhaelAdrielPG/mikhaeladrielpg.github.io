@@ -1,0 +1,6 @@
+# Robots.txt for mikhaeladrielpg.github.io
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://mikhaeladrielpg.github.io/sitemap.xml
