@@ -14,9 +14,12 @@ import { CONFIG } from './config.js';
  */
 export function isDarkModeActive() {
   const savedPreference = localStorage.getItem(CONFIG.STORAGE_KEYS.THEME);
+  // Explicit user preference (stored as "enabled" or "disabled") takes precedence
+  // over the OS-level prefers-color-scheme media query.
   if (savedPreference !== null) {
     return savedPreference === 'enabled';
   }
+  // No stored preference: fall back to the operating system's color scheme setting.
   return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 }
 

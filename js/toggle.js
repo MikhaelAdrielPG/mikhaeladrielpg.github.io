@@ -26,6 +26,8 @@ export function handleContentToggle(button) {
   if (!items.length) return;
 
   // Determine current visibility state
+  // If ALL items are currently visible → next action is "collapse" (hide them).
+  // If ANY item is hidden → next action is "expand" (show all).
   const allVisible = Array.from(items).every((item) => !item.classList.contains('d-none'));
   const willBeVisible = !allVisible;
 

@@ -43,7 +43,14 @@
     content="Software Engineer specializing in Software QA automation, backend systems, and CI/CD for banking and high-traffic platforms.">
   <meta name="twitter:image" content="https://mikhaeladrielpg.github.io/img/GBR.jpg">
 
-  <!-- Pre-render Theme Script (FOUC Prevention) -->
+  <!--
+    Pre-render Theme Script (FOUC Prevention)
+    Intentionally placed inline in <head> (before any CSS is parsed) so that the
+    correct theme class is applied to <html> synchronously on the very first paint.
+    If this were deferred or placed in an external file, the page would briefly
+    flash in the wrong theme (Flash of Unstyled Content / FOUC).
+    Priority order: explicit localStorage preference → OS prefers-color-scheme.
+  -->
   <script>
     (function () {
       const savedTheme = localStorage.getItem('darkMode');
@@ -194,6 +201,11 @@
           <!-- Right Column: Photo Avatar -->
           <div class="col-lg-6 col-md-5 hero-photo-col d-flex justify-content-center justify-content-lg-end">
             <div class="hero-photo-wrapper">
+              <!--
+                loading="eager" and fetchpriority="high" are set intentionally:
+                this image is the Largest Contentful Paint (LCP) element and must
+                load as early as possible to improve Core Web Vitals scores.
+              -->
               <img src="img/GBR-removebg-preview.png" alt="Mikhael Adriel Pratama Gana" class="hero-photo"
                 width="410" height="410" loading="eager" fetchpriority="high">
             </div>
@@ -558,7 +570,13 @@
             </a>
           </div>
 
-          <!-- Cert 4 (Toggle Item) -->
+          <!--
+            Cert 4 (Toggle Item)
+            Items with class "toggle-item d-none" are hidden by default and revealed
+            when the "Show More" button below is clicked. The button targets the parent
+            container (#certification-list) via data-toggle-target, and js/toggle.js
+            toggles the d-none class on all .toggle-item children inside it.
+          -->
           <div class="col-lg-4 col-md-6 toggle-item d-none">
             <a href="https://learn.nvidia.com/certificates?id" class="portfolio-card" target="_blank" rel="noopener noreferrer">
               <div class="portfolio-card-img-wrapper">
@@ -640,7 +658,11 @@
             </div>
           </div>
 
-          <!-- Project 4 (Toggle Item) -->
+          <!--
+            Project 4 (Toggle Item)
+            Hidden by default (d-none). Revealed via the "Show More" button below
+            which targets #project-list. Same toggle mechanism as the certifications section.
+          -->
           <div class="col-lg-4 col-md-6 toggle-item d-none">
             <div class="portfolio-card">
               <div class="portfolio-card-img-wrapper">
@@ -701,9 +723,15 @@
   </footer>
 
   <!-- Scripts -->
+  <!-- Bootstrap bundle (includes Popper.js); defer avoids blocking HTML parsing. -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous" defer></script>
+  <!--
+    type="module" enables ES Module syntax (import/export) in js/main.js and its
+    dependencies. Module scripts are deferred by default and run after the DOM is
+    fully parsed, so no explicit defer attribute is needed here.
+  -->
   <script type="module" src="js/main.js"></script>
 </body>
 

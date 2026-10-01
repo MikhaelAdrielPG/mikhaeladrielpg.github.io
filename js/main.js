@@ -22,7 +22,10 @@ function initMobileNavAutoClose() {
   navLinks.forEach((link) => {
     link.addEventListener('click', () => {
       if (navbarCollapse.classList.contains('show')) {
-        // Use Bootstrap Collapse API if available, or fallback to class removal
+        // Prefer Bootstrap's Collapse API over direct class removal to ensure
+        // collapse transition animations and internal Bootstrap state are
+        // properly cleaned up. Falls back to manual class removal if Bootstrap
+        // JS has not been loaded yet (e.g., CDN failure or deferred timing).
         if (window.bootstrap && window.bootstrap.Collapse) {
           const bsCollapse = window.bootstrap.Collapse.getInstance(navbarCollapse) || new window.bootstrap.Collapse(navbarCollapse, { toggle: false });
           bsCollapse.hide();
@@ -43,7 +46,9 @@ function initApp() {
   initMobileNavAutoClose();
 }
 
-// Execute when DOM content is fully loaded
+// Execute when DOM content is fully loaded.
+// The readyState check handles the edge case where this module script
+// runs after DOMContentLoaded has already fired (e.g., if loaded dynamically).
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', initApp);
 } else {

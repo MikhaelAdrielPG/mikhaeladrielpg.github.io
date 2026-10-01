@@ -245,3 +245,88 @@ Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com
 
 Code and documentation copyright 2011–2023 the [Bootstrap Authors](https://github.com/twbs/bootstrap/graphs/contributors). Code released under the [MIT License](https://github.com/twbs/bootstrap/blob/main/LICENSE). Docs released under [Creative Commons](https://creativecommons.org/licenses/by/3.0/).
 # MikhaelAdrielPratamaGana.github.io
+
+Personal portfolio and resume website for **Mikhael Adriel Pratama Gana**, a Software Engineer specializing in QA Automation, Backend Engineering, and DevOps.
+
+Live site: [https://mikhaeladrielpg.github.io/](https://mikhaeladrielpg.github.io/)
+
+---
+
+## Project Overview
+
+A static, single-page portfolio website hosted on GitHub Pages. Built with vanilla HTML, CSS, and JavaScript without any build step or framework dependency. Bootstrap 5 is loaded via CDN for layout and component utilities.
+
+## Project Structure
+
+```
+mikhaeladrielpg.github.io/
+├── index.html          # Single-page application entry point
+├── style.css           # Root CSS backward-compatibility wrapper → imports css/style.css
+├── toggle.js           # Root JS backward-compatibility wrapper → exposes window.toggleShow
+├── css/
+│   ├── variables.css   # Design tokens: CSS custom properties for light & dark themes
+│   └── style.css       # Main component stylesheet (imports variables.css)
+├── js/
+│   ├── config.js       # Centralized constants (storage keys, selectors, labels)
+│   ├── theme.js        # Dark/light mode manager (persistence, OS sync, DOM update)
+│   ├── toggle.js       # Show More / Show Less content toggle manager
+│   └── main.js         # Application entry point; orchestrates all modules
+├── img/
+│   ├── M.png                       # Favicon
+│   ├── GBR.jpg                     # Profile photo (original)
+│   ├── GBR-removebg-preview.png    # Profile photo (background removed, used in hero)
+│   └── projects/                   # Project and certification screenshot assets
+├── robots.txt          # Search engine crawl directives
+└── sitemap.xml         # XML sitemap for SEO
+```
+
+## Technology Stack
+
+| Layer        | Technology                                   |
+|--------------|----------------------------------------------|
+| Markup       | HTML5 (semantic elements, ARIA attributes)   |
+| Styling      | Vanilla CSS (custom properties, responsive)  |
+| Framework    | Bootstrap 5.3.2 (CDN)                        |
+| Icons        | Bootstrap Icons 1.11.3 (CDN)                 |
+| Typography   | Google Fonts – Inter, Plus Jakarta Sans      |
+| Scripting    | Vanilla JavaScript ES Modules (no bundler)   |
+| Hosting      | GitHub Pages                                 |
+
+## JavaScript Module Architecture
+
+The JS layer is split into four ES modules under `js/`:
+
+- **`config.js`** — Single source of truth for all magic strings (localStorage keys, CSS selectors, UI labels).
+- **`theme.js`** — Manages dark/light mode: reads `localStorage`, syncs with `prefers-color-scheme`, and updates DOM attributes and the toggle button state.
+- **`toggle.js`** — Handles "Show More / Show Less" for certifications and projects via `data-toggle-target`, `data-show-text`, and `data-hide-text` attributes on buttons.
+- **`main.js`** — Entry point; calls `initTheme()`, `initContentToggles()`, and `initMobileNavAutoClose()` after the DOM is ready.
+
+The root-level `toggle.js` is a **backward-compatibility bridge** that exposes `window.toggleShow` for any legacy inline callers. New code should use the `js/` modules.
+
+## Dark Mode
+
+- User preference is persisted in `localStorage` under the key `darkMode` (`"enabled"` / `"disabled"`).
+- If no preference is saved, the OS `prefers-color-scheme` media query is used as the default.
+- To prevent Flash of Unstyled Content (FOUC), an inline `<script>` in `<head>` applies the theme class synchronously before CSS renders.
+- The theme applies both a `.dark-mode` class on `<html>` and `data-bs-theme="dark"` for Bootstrap compatibility.
+
+## Running Locally
+
+No build step is required. Open `index.html` directly in a browser, or serve it with any static file server:
+
+```bash
+# Using Python
+python3 -m http.server 8080
+
+# Using Node.js (npx)
+npx serve .
+```
+
+Then navigate to `http://localhost:8080`.
+
+## SEO
+
+- Structured data (JSON-LD `Person` schema) is included in `<head>`.
+- Open Graph and Twitter Card meta tags are configured.
+- `robots.txt` allows all crawlers; `sitemap.xml` provides the canonical URL.
+- The canonical URL is `https://mikhaeladrielpg.github.io/`.
