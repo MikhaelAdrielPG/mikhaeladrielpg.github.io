@@ -1,332 +1,102 @@
-<p align="center">
-  <a href="https://getbootstrap.com/">
-    <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" alt="Bootstrap logo" width="200" height="165">
-  </a>
-</p>
+# Mikhael Adriel Pratama Gana — Personal Portfolio Website
 
-<h3 align="center">Bootstrap</h3>
+[![Website](https://img.shields.io/badge/Website-mikhaeladrielpg.github.io-blue?style=flat-square&logo=github)](https://mikhaeladrielpg.github.io/)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.3-7952B3?style=flat-square&logo=bootstrap)](https://getbootstrap.com/)
+[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
-<p align="center">
-  Sleek, intuitive, and powerful front-end framework for faster and easier web development.
-  <br>
-  <a href="https://getbootstrap.com/docs/5.3/"><strong>Explore Bootstrap docs »</strong></a>
-  <br>
-  <br>
-  <a href="https://github.com/twbs/bootstrap/issues/new?assignees=-&labels=bug&template=bug_report.yml">Report bug</a>
-  ·
-  <a href="https://github.com/twbs/bootstrap/issues/new?assignees=&labels=feature&template=feature_request.yml">Request feature</a>
-  ·
-  <a href="https://themes.getbootstrap.com/">Themes</a>
-  ·
-  <a href="https://blog.getbootstrap.com/">Blog</a>
-</p>
+Source code for the personal portfolio website of **Mikhael Adriel Pratama Gana**, Software QA Automation Engineer / SDET and Backend Developer specializing in QA automation, backend systems, and CI/CD pipelines.
 
-
-## Bootstrap 5
-
-Our default branch is for development of our Bootstrap 5 release. Head to the [`v4-dev` branch](https://github.com/twbs/bootstrap/tree/v4-dev) to view the readme, documentation, and source code for Bootstrap 4.
-
-
-## Table of contents
-
-- [Quick start](#quick-start)
-- [Status](#status)
-- [What's included](#whats-included)
-- [Bugs and feature requests](#bugs-and-feature-requests)
-- [Documentation](#documentation)
-- [Contributing](#contributing)
-- [Community](#community)
-- [Versioning](#versioning)
-- [Creators](#creators)
-- [Thanks](#thanks)
-- [Copyright and license](#copyright-and-license)
-
-
-## Quick start
-
-Several quick start options are available:
-
-- [Download the latest release](https://github.com/twbs/bootstrap/archive/v5.3.2.zip)
-- Clone the repo: `git clone https://github.com/twbs/bootstrap.git`
-- Install with [npm](https://www.npmjs.com/): `npm install bootstrap@v5.3.2`
-- Install with [yarn](https://yarnpkg.com/): `yarn add bootstrap@v5.3.2`
-- Install with [Composer](https://getcomposer.org/): `composer require twbs/bootstrap:5.3.2`
-- Install with [NuGet](https://www.nuget.org/): CSS: `Install-Package bootstrap` Sass: `Install-Package bootstrap.sass`
-
-Read the [Getting started page](https://getbootstrap.com/docs/5.3/getting-started/introduction/) for information on the framework contents, templates, examples, and more.
-
-
-## Status
-
-[![Build Status](https://img.shields.io/github/actions/workflow/status/twbs/bootstrap/js.yml?branch=main&label=JS%20Tests&logo=github)](https://github.com/twbs/bootstrap/actions/workflows/js.yml?query=workflow%3AJS+branch%3Amain)
-[![npm version](https://img.shields.io/npm/v/bootstrap?logo=npm&logoColor=fff)](https://www.npmjs.com/package/bootstrap)
-[![Gem version](https://img.shields.io/gem/v/bootstrap?logo=rubygems&logoColor=fff)](https://rubygems.org/gems/bootstrap)
-[![Meteor Atmosphere](https://img.shields.io/badge/meteor-twbs%3Abootstrap-blue?logo=meteor&logoColor=fff)](https://atmospherejs.com/twbs/bootstrap)
-[![Packagist Prerelease](https://img.shields.io/packagist/vpre/twbs/bootstrap?logo=packagist&logoColor=fff)](https://packagist.org/packages/twbs/bootstrap)
-[![NuGet](https://img.shields.io/nuget/vpre/bootstrap?logo=nuget&logoColor=fff)](https://www.nuget.org/packages/bootstrap/absoluteLatest)
-[![Coverage Status](https://img.shields.io/coveralls/github/twbs/bootstrap/main?logo=coveralls&logoColor=fff)](https://coveralls.io/github/twbs/bootstrap?branch=main)
-[![CSS gzip size](https://img.badgesize.io/twbs/bootstrap/main/dist/css/bootstrap.min.css?compression=gzip&label=CSS%20gzip%20size)](https://github.com/twbs/bootstrap/blob/main/dist/css/bootstrap.min.css)
-[![CSS Brotli size](https://img.badgesize.io/twbs/bootstrap/main/dist/css/bootstrap.min.css?compression=brotli&label=CSS%20Brotli%20size)](https://github.com/twbs/bootstrap/blob/main/dist/css/bootstrap.min.css)
-[![JS gzip size](https://img.badgesize.io/twbs/bootstrap/main/dist/js/bootstrap.min.js?compression=gzip&label=JS%20gzip%20size)](https://github.com/twbs/bootstrap/blob/main/dist/js/bootstrap.min.js)
-[![JS Brotli size](https://img.badgesize.io/twbs/bootstrap/main/dist/js/bootstrap.min.js?compression=brotli&label=JS%20Brotli%20size)](https://github.com/twbs/bootstrap/blob/main/dist/js/bootstrap.min.js)
-[![Backers on Open Collective](https://img.shields.io/opencollective/backers/bootstrap?logo=opencollective&logoColor=fff)](#backers)
-[![Sponsors on Open Collective](https://img.shields.io/opencollective/sponsors/bootstrap?logo=opencollective&logoColor=fff)](#sponsors)
-
-
-## What's included
-
-Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations.
-
-<details>
-  <summary>Download contents</summary>
-
-  ```text
-  bootstrap/
-  ├── css/
-  │   ├── bootstrap-grid.css
-  │   ├── bootstrap-grid.css.map
-  │   ├── bootstrap-grid.min.css
-  │   ├── bootstrap-grid.min.css.map
-  │   ├── bootstrap-grid.rtl.css
-  │   ├── bootstrap-grid.rtl.css.map
-  │   ├── bootstrap-grid.rtl.min.css
-  │   ├── bootstrap-grid.rtl.min.css.map
-  │   ├── bootstrap-reboot.css
-  │   ├── bootstrap-reboot.css.map
-  │   ├── bootstrap-reboot.min.css
-  │   ├── bootstrap-reboot.min.css.map
-  │   ├── bootstrap-reboot.rtl.css
-  │   ├── bootstrap-reboot.rtl.css.map
-  │   ├── bootstrap-reboot.rtl.min.css
-  │   ├── bootstrap-reboot.rtl.min.css.map
-  │   ├── bootstrap-utilities.css
-  │   ├── bootstrap-utilities.css.map
-  │   ├── bootstrap-utilities.min.css
-  │   ├── bootstrap-utilities.min.css.map
-  │   ├── bootstrap-utilities.rtl.css
-  │   ├── bootstrap-utilities.rtl.css.map
-  │   ├── bootstrap-utilities.rtl.min.css
-  │   ├── bootstrap-utilities.rtl.min.css.map
-  │   ├── bootstrap.css
-  │   ├── bootstrap.css.map
-  │   ├── bootstrap.min.css
-  │   ├── bootstrap.min.css.map
-  │   ├── bootstrap.rtl.css
-  │   ├── bootstrap.rtl.css.map
-  │   ├── bootstrap.rtl.min.css
-  │   └── bootstrap.rtl.min.css.map
-  └── js/
-      ├── bootstrap.bundle.js
-      ├── bootstrap.bundle.js.map
-      ├── bootstrap.bundle.min.js
-      ├── bootstrap.bundle.min.js.map
-      ├── bootstrap.esm.js
-      ├── bootstrap.esm.js.map
-      ├── bootstrap.esm.min.js
-      ├── bootstrap.esm.min.js.map
-      ├── bootstrap.js
-      ├── bootstrap.js.map
-      ├── bootstrap.min.js
-      └── bootstrap.min.js.map
-  ```
-</details>
-
-We provide compiled CSS and JS (`bootstrap.*`), as well as compiled and minified CSS and JS (`bootstrap.min.*`). [Source maps](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps) (`bootstrap.*.map`) are available for use with certain browsers' developer tools. Bundled JS files (`bootstrap.bundle.js` and minified `bootstrap.bundle.min.js`) include [Popper](https://popper.js.org/).
-
-
-## Bugs and feature requests
-
-Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/twbs/bootstrap/blob/main/.github/CONTRIBUTING.md#using-the-issue-tracker) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/twbs/bootstrap/issues/new/choose).
-
-
-## Documentation
-
-Bootstrap's documentation, included in this repo in the root directory, is built with [Hugo](https://gohugo.io/) and publicly hosted on GitHub Pages at <https://getbootstrap.com/>. The docs may also be run locally.
-
-Documentation search is powered by [Algolia's DocSearch](https://docsearch.algolia.com/).
-
-### Running documentation locally
-
-1. Run `npm install` to install the Node.js dependencies, including Hugo (the site builder).
-2. Run `npm run test` (or a specific npm script) to rebuild distributed CSS and JavaScript files, as well as our docs assets.
-3. From the root `/bootstrap` directory, run `npm run docs-serve` in the command line.
-4. Open `http://localhost:9001/` in your browser, and voilà.
-
-Learn more about using Hugo by reading its [documentation](https://gohugo.io/documentation/).
-
-### Documentation for previous releases
-
-You can find all our previous releases docs on <https://getbootstrap.com/docs/versions/>.
-
-[Previous releases](https://github.com/twbs/bootstrap/releases) and their documentation are also available for download.
-
-
-## Contributing
-
-Please read through our [contributing guidelines](https://github.com/twbs/bootstrap/blob/main/.github/CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
-
-Moreover, if your pull request contains JavaScript patches or features, you must include [relevant unit tests](https://github.com/twbs/bootstrap/tree/main/js/tests). All HTML and CSS should conform to the [Code Guide](https://github.com/mdo/code-guide), maintained by [Mark Otto](https://github.com/mdo).
-
-Editor preferences are available in the [editor config](https://github.com/twbs/bootstrap/blob/main/.editorconfig) for easy use in common text editors. Read more and download plugins at <https://editorconfig.org/>.
-
-
-## Community
-
-Get updates on Bootstrap's development and chat with the project maintainers and community members.
-
-- Follow [@getbootstrap on Twitter](https://twitter.com/getbootstrap).
-- Read and subscribe to [The Official Bootstrap Blog](https://blog.getbootstrap.com/).
-- Ask questions and explore [our GitHub Discussions](https://github.com/twbs/bootstrap/discussions).
-- Discuss, ask questions, and more on [the community Discord](https://discord.gg/bZUvakRU3M) or [Bootstrap subreddit](https://reddit.com/r/bootstrap).
-- Chat with fellow Bootstrappers in IRC. On the `irc.libera.chat` server, in the `#bootstrap` channel.
-- Implementation help may be found at Stack Overflow (tagged [`bootstrap-5`](https://stackoverflow.com/questions/tagged/bootstrap-5)).
-- Developers should use the keyword `bootstrap` on packages which modify or add to the functionality of Bootstrap when distributing through [npm](https://www.npmjs.com/browse/keyword/bootstrap) or similar delivery mechanisms for maximum discoverability.
-
-
-## Versioning
-
-For transparency into our release cycle and in striving to maintain backward compatibility, Bootstrap is maintained under [the Semantic Versioning guidelines](https://semver.org/). Sometimes we screw up, but we adhere to those rules whenever possible.
-
-See [the Releases section of our GitHub project](https://github.com/twbs/bootstrap/releases) for changelogs for each release version of Bootstrap. Release announcement posts on [the official Bootstrap blog](https://blog.getbootstrap.com/) contain summaries of the most noteworthy changes made in each release.
-
-
-## Creators
-
-**Mark Otto**
-
-- <https://twitter.com/mdo>
-- <https://github.com/mdo>
-
-**Jacob Thornton**
-
-- <https://twitter.com/fat>
-- <https://github.com/fat>
-
-
-## Thanks
-
-<a href="https://www.browserstack.com/">
-  <img src="https://live.browserstack.com/images/opensource/browserstack-logo.svg" alt="BrowserStack" width="192" height="42">
-</a>
-
-Thanks to [BrowserStack](https://www.browserstack.com/) for providing the infrastructure that allows us to test in real browsers!
-
-<a href="https://www.netlify.com/">
-  <img src="https://www.netlify.com/v3/img/components/full-logo-light.svg" alt="Netlify" width="147" height="40">
-</a>
-
-Thanks to [Netlify](https://www.netlify.com/) for providing us with Deploy Previews!
-
-
-## Sponsors
-
-Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [[Become a sponsor](https://opencollective.com/bootstrap#sponsor)]
-
-[![OC sponsor 0](https://opencollective.com/bootstrap/sponsor/0/avatar.svg)](https://opencollective.com/bootstrap/sponsor/0/website)
-[![OC sponsor 1](https://opencollective.com/bootstrap/sponsor/1/avatar.svg)](https://opencollective.com/bootstrap/sponsor/1/website)
-[![OC sponsor 2](https://opencollective.com/bootstrap/sponsor/2/avatar.svg)](https://opencollective.com/bootstrap/sponsor/2/website)
-[![OC sponsor 3](https://opencollective.com/bootstrap/sponsor/3/avatar.svg)](https://opencollective.com/bootstrap/sponsor/3/website)
-[![OC sponsor 4](https://opencollective.com/bootstrap/sponsor/4/avatar.svg)](https://opencollective.com/bootstrap/sponsor/4/website)
-[![OC sponsor 5](https://opencollective.com/bootstrap/sponsor/5/avatar.svg)](https://opencollective.com/bootstrap/sponsor/5/website)
-[![OC sponsor 6](https://opencollective.com/bootstrap/sponsor/6/avatar.svg)](https://opencollective.com/bootstrap/sponsor/6/website)
-[![OC sponsor 7](https://opencollective.com/bootstrap/sponsor/7/avatar.svg)](https://opencollective.com/bootstrap/sponsor/7/website)
-[![OC sponsor 8](https://opencollective.com/bootstrap/sponsor/8/avatar.svg)](https://opencollective.com/bootstrap/sponsor/8/website)
-[![OC sponsor 9](https://opencollective.com/bootstrap/sponsor/9/avatar.svg)](https://opencollective.com/bootstrap/sponsor/9/website)
-
-
-## Backers
-
-Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com/bootstrap#backer)]
-
-[![Backers](https://opencollective.com/bootstrap/backers.svg?width=890)](https://opencollective.com/bootstrap#backers)
-
-
-## Copyright and license
-
-Code and documentation copyright 2011–2023 the [Bootstrap Authors](https://github.com/twbs/bootstrap/graphs/contributors). Code released under the [MIT License](https://github.com/twbs/bootstrap/blob/main/LICENSE). Docs released under [Creative Commons](https://creativecommons.org/licenses/by/3.0/).
-# MikhaelAdrielPratamaGana.github.io
-
-Personal portfolio and resume website for **Mikhael Adriel Pratama Gana**, a Software Engineer specializing in QA Automation, Backend Engineering, and DevOps.
-
-Live site: [https://mikhaeladrielpg.github.io/](https://mikhaeladrielpg.github.io/)
+🌐 **Live Website:** [https://mikhaeladrielpg.github.io](https://mikhaeladrielpg.github.io/)
 
 ---
 
-## Project Overview
+## 🚀 Key Features
 
-A static, single-page portfolio website hosted on GitHub Pages. Built with vanilla HTML, CSS, and JavaScript without any build step or framework dependency. Bootstrap 5 is loaded via CDN for layout and component utilities.
+* **Modern & Clean UI/UX:** Responsive portfolio layout built with Bootstrap 5.3.3 and custom modular CSS.
+* **Dark / Light Mode:**
+  * System preference detection (`prefers-color-scheme`).
+  * Manual toggle button with persistent state stored in `localStorage`.
+  * Pre-render script in `<head>` to prevent Flash of Unstyled Content (FOUC).
+* **Interactive Components:** Modular ES6 JavaScript for expandable sections (*Show More / Show Less*), mobile navbar auto-close, and accessible UI interactions.
+* **Accessibility & SEO First:**
+  * Semantic HTML5 structure with ARIA attributes (`aria-expanded`, `aria-label`, `aria-pressed`).
+  * OpenGraph and Twitter Card metadata for rich social previews.
+  * Schema.org Structured Data (`JSON-LD`) for search engines.
+  * Subresource Integrity (SRI) hashes applied to external CDN assets for supply chain security.
 
-## Project Structure
+---
 
-```
+## 🛠️ Tech Stack
+
+* **Markup:** HTML5 (Semantic, SEO & OpenGraph tags, JSON-LD)
+* **Styling:** CSS3, [Bootstrap 5.3.3](https://getbootstrap.com/), [Bootstrap Icons 1.11.3](https://icons.getbootstrap.com/)
+* **Typography:** Google Fonts (Plus Jakarta Sans, Inter)
+* **Scripting:** Vanilla JavaScript (ES Modules: `config.js`, `theme.js`, `toggle.js`, `main.js`)
+* **Hosting:** GitHub Pages
+
+---
+
+## 📁 Project Structure
+
+```text
 mikhaeladrielpg.github.io/
-├── index.html          # Single-page application entry point
-├── style.css           # Root CSS backward-compatibility wrapper → imports css/style.css
-├── toggle.js           # Root JS backward-compatibility wrapper → exposes window.toggleShow
 ├── css/
-│   ├── variables.css   # Design tokens: CSS custom properties for light & dark themes
-│   └── style.css       # Main component stylesheet (imports variables.css)
+│   └── style.css          # Modular CSS and custom styling tokens
 ├── js/
-│   ├── config.js       # Centralized constants (storage keys, selectors, labels)
-│   ├── theme.js        # Dark/light mode manager (persistence, OS sync, DOM update)
-│   ├── toggle.js       # Show More / Show Less content toggle manager
-│   └── main.js         # Application entry point; orchestrates all modules
-├── img/
-│   ├── M.png                       # Favicon
-│   ├── GBR.jpg                     # Profile photo (original)
-│   ├── GBR-removebg-preview.png    # Profile photo (background removed, used in hero)
-│   └── projects/                   # Project and certification screenshot assets
-├── robots.txt          # Search engine crawl directives
-└── sitemap.xml         # XML sitemap for SEO
+│   ├── config.js          # Centralized configuration & constants
+│   ├── theme.js           # Dark/Light theme manager & event listeners
+│   ├── toggle.js          # Content visibility toggle logic
+│   └── main.js            # Main application bootstrap and entrypoint
+├── img/                   # Image assets (avatar, project previews, certifications)
+├── index.html             # Primary single-page portfolio layout
+├── robots.txt             # Search engine crawler directives
+├── sitemap.xml            # XML sitemap for SEO indexing
+└── README.md              # Project documentation
 ```
 
-## Technology Stack
+---
 
-| Layer        | Technology                                   |
-|--------------|----------------------------------------------|
-| Markup       | HTML5 (semantic elements, ARIA attributes)   |
-| Styling      | Vanilla CSS (custom properties, responsive)  |
-| Framework    | Bootstrap 5.3.2 (CDN)                        |
-| Icons        | Bootstrap Icons 1.11.3 (CDN)                 |
-| Typography   | Google Fonts – Inter, Plus Jakarta Sans      |
-| Scripting    | Vanilla JavaScript ES Modules (no bundler)   |
-| Hosting      | GitHub Pages                                 |
+## 💻 Local Development
 
-## JavaScript Module Architecture
+Since this is a lightweight static website, you do not need to install complex dependencies or build tooling.
 
-The JS layer is split into four ES modules under `js/`:
-
-- **`config.js`** — Single source of truth for all magic strings (localStorage keys, CSS selectors, UI labels).
-- **`theme.js`** — Manages dark/light mode: reads `localStorage`, syncs with `prefers-color-scheme`, and updates DOM attributes and the toggle button state.
-- **`toggle.js`** — Handles "Show More / Show Less" for certifications and projects via `data-toggle-target`, `data-show-text`, and `data-hide-text` attributes on buttons.
-- **`main.js`** — Entry point; calls `initTheme()`, `initContentToggles()`, and `initMobileNavAutoClose()` after the DOM is ready.
-
-The root-level `toggle.js` is a **backward-compatibility bridge** that exposes `window.toggleShow` for any legacy inline callers. New code should use the `js/` modules.
-
-## Dark Mode
-
-- User preference is persisted in `localStorage` under the key `darkMode` (`"enabled"` / `"disabled"`).
-- If no preference is saved, the OS `prefers-color-scheme` media query is used as the default.
-- To prevent Flash of Unstyled Content (FOUC), an inline `<script>` in `<head>` applies the theme class synchronously before CSS renders.
-- The theme applies both a `.dark-mode` class on `<html>` and `data-bs-theme="dark"` for Bootstrap compatibility.
-
-## Running Locally
-
-No build step is required. Open `index.html` directly in a browser, or serve it with any static file server:
-
+### 1. Clone the repository
 ```bash
-# Using Python
-python3 -m http.server 8080
+git clone https://github.com/mikhaeladrielpg/mikhaeladrielpg.github.io.git
+cd mikhaeladrielpg.github.io
+```
 
-# Using Node.js (npx)
+### 2. Run locally
+
+You can use any local HTTP server (required for ES Modules to load without CORS issues):
+
+Using **Python 3**:
+```bash
+python3 -m http.server 8000
+```
+Then visit `http://localhost:8000` in your web browser.
+
+Using **VS Code**:
+Install the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension and click **"Go Live"**.
+
+Using **Node.js (`npx serve`)**:
+```bash
 npx serve .
 ```
 
-Then navigate to `http://localhost:8080`.
+---
 
-## SEO
+## 🔒 Security & Best Practices
 
-- Structured data (JSON-LD `Person` schema) is included in `<head>`.
-- Open Graph and Twitter Card meta tags are configured.
-- `robots.txt` allows all crawlers; `sitemap.xml` provides the canonical URL.
-- The canonical URL is `https://mikhaeladrielpg.github.io/`.
+* **CDN Integrity (SRI):** All CDN assets (Bootstrap CSS & JS) use SHA-384 cryptographic integrity hashes to prevent tampering.
+* **Safe External Links:** All external links include `target="_blank"` with `rel="noopener noreferrer"` to prevent reverse tabnabbing vulnerabilities.
+* **No Server Footprint:** Pure static architecture hosted on GitHub Pages ensures no exposure to server-side injection vectors.
+
+---
+
+## 📬 Connect
+
+* **Website:** [mikhaeladrielpg.github.io](https://mikhaeladrielpg.github.io)
+* **LinkedIn:** [linkedin.com/in/mikhaeladriel](https://linkedin.com/in/mikhaeladriel)
+* **GitHub:** [@mikhaeladrielpg](https://github.com/mikhaeladrielpg)
+* **Email:** [mikhael.adriel.pratama.gana@gmail.com](mailto:mikhael.adriel.pratama.gana@gmail.com)
