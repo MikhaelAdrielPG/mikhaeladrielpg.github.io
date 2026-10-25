@@ -259,7 +259,7 @@
           <h2 id="experience-heading" class="section-title">Experiences</h2>
         </div>
 
-        <div class="experience-timeline">
+        <div class="experience-timeline" id="experience-list">
           
           <!-- Experience 1: PT. Adi Data Informatika -->
           <article class="experience-card">
@@ -356,7 +356,7 @@
           </article>
 
           <!-- Experience 5: Supernova Palapa Nusantara -->
-          <article class="experience-card">
+          <article class="experience-card toggle-item d-none">
             <header class="experience-header">
               <div>
                 <h3 class="experience-company">Supernova Palapa Nusantara, Bandung</h3>
@@ -379,7 +379,7 @@
           </article>
 
           <!-- Experience 6: J4U Ministry -->
-          <article class="experience-card">
+          <article class="experience-card toggle-item d-none">
             <header class="experience-header">
               <div>
                 <h3 class="experience-company">J4U Ministry, Bandung</h3>
@@ -402,7 +402,7 @@
           </article>
 
           <!-- Experience 7: KOMINFO -->
-          <article class="experience-card">
+          <article class="experience-card toggle-item d-none">
             <header class="experience-header">
               <div>
                 <h3 class="experience-company">Ministry of Communication and Information Technology (KOMINFO), Jakarta</h3>
@@ -424,7 +424,7 @@
           </article>
 
           <!-- Experience 8: PT. Walden Global Services -->
-          <article class="experience-card">
+          <article class="experience-card toggle-item d-none">
             <header class="experience-header">
               <div>
                 <h3 class="experience-company">PT. Walden Global Services (WGS), Bandung</h3>
@@ -446,7 +446,7 @@
           </article>
 
           <!-- Experience 9: PT. Visi Teguh Kreatif -->
-          <article class="experience-card">
+          <article class="experience-card toggle-item d-none">
             <header class="experience-header">
               <div>
                 <h3 class="experience-company">PT. Visi Teguh Kreatif (Vistek), Bandung</h3>
@@ -469,7 +469,7 @@
           </article>
 
           <!-- Experience 10: Ic2 Studio -->
-          <article class="experience-card">
+          <article class="experience-card toggle-item d-none">
             <header class="experience-header">
               <div>
                 <h3 class="experience-company">Ic2 Studio, Bandung</h3>
@@ -492,7 +492,7 @@
           </article>
 
           <!-- Experience 11: PT. Rumah Belajar Indonesia -->
-          <article class="experience-card">
+          <article class="experience-card toggle-item d-none">
             <header class="experience-header">
               <div>
                 <h3 class="experience-company">PT. Rumah Belajar Indonesia, Bandung</h3>
@@ -514,6 +514,20 @@
             </ul>
           </article>
 
+        </div>
+
+        <!-- Toggle Button (Declarative data-* attributes without inline handler) -->
+        <div class="text-center mt-5">
+          <button class="btn-show-more"
+            type="button"
+            data-toggle-target="#experience-list"
+            data-show-text="Show More"
+            data-hide-text="Show Less"
+            aria-expanded="false"
+            aria-controls="experience-list">
+            <span>Show More</span>
+            <i class="bi bi-chevron-down" aria-hidden="true"></i>
+          </button>
         </div>
       </div>
     </section>
@@ -728,11 +742,10 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous" defer></script>
   <!--
-    type="module" enables ES Module syntax (import/export) in js/main.js and its
-    dependencies. Module scripts are deferred by default and run after the DOM is
-    fully parsed, so no explicit defer attribute is needed here.
+    Vanilla JavaScript controller (universal: supports file://, http://, and https://)
+    Deferred so it runs after HTML parsing without blocking DOM render.
   -->
-  <script type="module" src="js/main.js"></script>
+  <script defer src="js/main.js"></script>
 </body>
 
 </html>
